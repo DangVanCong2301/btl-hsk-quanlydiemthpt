@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTL_QuanLyDiemTHPT", "BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT.csproj", "{238B9EC1-5B7A-4354-B1B3-002CA3A7164E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{238B9EC1-5B7A-4354-B1B3-002CA3A7164E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238B9EC1-5B7A-4354-B1B3-002CA3A7164E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238B9EC1-5B7A-4354-B1B3-002CA3A7164E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238B9EC1-5B7A-4354-B1B3-002CA3A7164E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11DEB66B-F593-4A8E-81D3-8E1E74EF45FF}
+	EndGlobalSection
+EndGlobal

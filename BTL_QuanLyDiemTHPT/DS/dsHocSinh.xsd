@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsHocSinh" targetNamespace="http://tempuri.org/dsHocSinh.xsd" xmlns:mstns="http://tempuri.org/dsHocSinh.xsd" xmlns="http://tempuri.org/dsHocSinh.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BTL_HSK_QLDiemTHPTConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BTL_HSK_QLDiemTHPTConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BTL_QuanLyDiemTHPT.Properties.Settings.GlobalReference.Default.BTL_HSK_QLDiemTHPTConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HocSinhTheoLopTableAdapter" GeneratorDataComponentClassName="HocSinhTheoLopTableAdapter" Name="HocSinhTheoLop" UserDataComponentName="HocSinhTheoLopTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BTL_HSK_QLDiemTHPTConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT tblHocSinh.sMaHocSinh, tblHocSinh.sHoTen, tblGiaoVien.sTenGiaoVien, tblHocSinh.sGioiTinh, tblHocSinh.dNgaySinh, tblHocSinh.sQueQuan, tblLop.iSoLuongHocSinh, tblLop.sNamHoc, tblLop.sTenLop
+FROM     tblHocSinh INNER JOIN
+                  tblHocSinh_tblLop ON tblHocSinh.sMaHocSinh = tblHocSinh_tblLop.sMaHocSinh INNER JOIN
+                  tblLop ON tblHocSinh_tblLop.sMaLop = tblLop.sMaLop INNER JOIN
+                  tblGiaoVien ON tblLop.sMaGiaoVien = tblGiaoVien.sMaGiaoVien</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sMaHocSinh" DataSetColumn="sMaHocSinh" />
+              <Mapping SourceColumn="sHoTen" DataSetColumn="sHoTen" />
+              <Mapping SourceColumn="sTenGiaoVien" DataSetColumn="sTenGiaoVien" />
+              <Mapping SourceColumn="sGioiTinh" DataSetColumn="sGioiTinh" />
+              <Mapping SourceColumn="dNgaySinh" DataSetColumn="dNgaySinh" />
+              <Mapping SourceColumn="sQueQuan" DataSetColumn="sQueQuan" />
+              <Mapping SourceColumn="iSoLuongHocSinh" DataSetColumn="iSoLuongHocSinh" />
+              <Mapping SourceColumn="sNamHoc" DataSetColumn="sNamHoc" />
+              <Mapping SourceColumn="sTenLop" DataSetColumn="sTenLop" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsHocSinh" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsHocSinh" msprop:Generator_UserDSName="dsHocSinh">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HocSinhTheoLop" msprop:Generator_TableClassName="HocSinhTheoLopDataTable" msprop:Generator_TableVarName="tableHocSinhTheoLop" msprop:Generator_TablePropName="HocSinhTheoLop" msprop:Generator_RowDeletingName="HocSinhTheoLopRowDeleting" msprop:Generator_RowChangingName="HocSinhTheoLopRowChanging" msprop:Generator_RowEvHandlerName="HocSinhTheoLopRowChangeEventHandler" msprop:Generator_RowDeletedName="HocSinhTheoLopRowDeleted" msprop:Generator_UserTableName="HocSinhTheoLop" msprop:Generator_RowChangedName="HocSinhTheoLopRowChanged" msprop:Generator_RowEvArgName="HocSinhTheoLopRowChangeEvent" msprop:Generator_RowClassName="HocSinhTheoLopRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sMaHocSinh" msprop:Generator_ColumnVarNameInTable="columnsMaHocSinh" msprop:Generator_ColumnPropNameInRow="sMaHocSinh" msprop:Generator_ColumnPropNameInTable="sMaHocSinhColumn" msprop:Generator_UserColumnName="sMaHocSinh">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sHoTen" msprop:Generator_ColumnVarNameInTable="columnsHoTen" msprop:Generator_ColumnPropNameInRow="sHoTen" msprop:Generator_ColumnPropNameInTable="sHoTenColumn" msprop:Generator_UserColumnName="sHoTen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sTenGiaoVien" msprop:Generator_ColumnVarNameInTable="columnsTenGiaoVien" msprop:Generator_ColumnPropNameInRow="sTenGiaoVien" msprop:Generator_ColumnPropNameInTable="sTenGiaoVienColumn" msprop:Generator_UserColumnName="sTenGiaoVien" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sGioiTinh" msprop:Generator_ColumnVarNameInTable="columnsGioiTinh" msprop:Generator_ColumnPropNameInRow="sGioiTinh" msprop:Generator_ColumnPropNameInTable="sGioiTinhColumn" msprop:Generator_UserColumnName="sGioiTinh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dNgaySinh" msprop:Generator_ColumnVarNameInTable="columndNgaySinh" msprop:Generator_ColumnPropNameInRow="dNgaySinh" msprop:Generator_ColumnPropNameInTable="dNgaySinhColumn" msprop:Generator_UserColumnName="dNgaySinh" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sQueQuan" msprop:Generator_ColumnVarNameInTable="columnsQueQuan" msprop:Generator_ColumnPropNameInRow="sQueQuan" msprop:Generator_ColumnPropNameInTable="sQueQuanColumn" msprop:Generator_UserColumnName="sQueQuan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="iSoLuongHocSinh" msprop:Generator_ColumnVarNameInTable="columniSoLuongHocSinh" msprop:Generator_ColumnPropNameInRow="iSoLuongHocSinh" msprop:Generator_ColumnPropNameInTable="iSoLuongHocSinhColumn" msprop:Generator_UserColumnName="iSoLuongHocSinh" type="xs:int" minOccurs="0" />
+              <xs:element name="sNamHoc" msprop:Generator_ColumnVarNameInTable="columnsNamHoc" msprop:Generator_ColumnPropNameInRow="sNamHoc" msprop:Generator_ColumnPropNameInTable="sNamHocColumn" msprop:Generator_UserColumnName="sNamHoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sTenLop" msprop:Generator_ColumnVarNameInTable="columnsTenLop" msprop:Generator_ColumnPropNameInRow="sTenLop" msprop:Generator_ColumnPropNameInTable="sTenLopColumn" msprop:Generator_UserColumnName="sTenLop" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HocSinhTheoLop" />
+      <xs:field xpath="mstns:sMaHocSinh" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

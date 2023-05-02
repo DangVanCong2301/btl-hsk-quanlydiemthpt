@@ -1,0 +1,86 @@
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\BTL_QuanLyDiemTHPT.exe.config
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\BTL_QuanLyDiemTHPT.exe
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\BTL_QuanLyDiemTHPT.pdb
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.AssemblyReference.cache
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmGiaoVien.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmMainForm.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.Properties.Resources.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.GenerateResource.cache
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.CoreCompileInputs.cache
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.exe
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.pdb
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmMonHoc.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmLop.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmHocSinh.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmBangDiem.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmHocSinh_Lop.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.Shared.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\stdole.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.CopyComplete
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSThi.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSBangDiemLop.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSLuuBan.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSDiemHS.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmNgayTrongKhoang.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmKhoangDiem.resources
+E:\Documents\BTL - HSK\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmBangDiemLop.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.AssemblyReference.cache
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSBangDiemLop.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSDiemHS.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSLuuBan.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmDSThi.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmKhoangDiem.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.BaoCao.frmNgayTrongKhoang.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmBangDiem.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmBangDiemLop.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmGiaoVien.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmHocSinh.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmHocSinh_Lop.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmLop.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmMainForm.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmMonHoc.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.Properties.Resources.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.GenerateResource.cache
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.CoreCompileInputs.cache
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.exe
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.pdb
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\BTL_QuanLyDiemTHPT.exe.config
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\BTL_QuanLyDiemTHPT.exe
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\BTL_QuanLyDiemTHPT.pdb
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.Shared.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\bin\Debug\stdole.dll
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.csproj.CopyComplete
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmDangNhap.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmTaiKhoan.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.frmQuenMatKhau.resources
+E:\Deploy\BTL_QuanLyDiemTHPT\BTL_QuanLyDiemTHPT\obj\Debug\BTL_QuanLyDiemTHPT.UIReport.frmDanhSachHocSinhTheoLop.resources
