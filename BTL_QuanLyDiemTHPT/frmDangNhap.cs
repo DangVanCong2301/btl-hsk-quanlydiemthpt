@@ -58,5 +58,10 @@ namespace BTL_QuanLyDiemTHPT
             frmQuenMatKhau f = new frmQuenMatKhau();
             f.ShowDialog();
         }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

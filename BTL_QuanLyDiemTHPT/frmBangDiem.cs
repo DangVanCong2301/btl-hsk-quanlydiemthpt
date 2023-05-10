@@ -212,6 +212,18 @@ namespace BTL_QuanLyDiemTHPT
                 MessageBox.Show("Bảng điểm này đã tồn tại, bạn phải nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            if (Convert.ToInt32(txtDiem15Phut.Text) < 0)
+            {
+                MessageBox.Show("Điểm 15 phút không được < 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtDiem15Phut.Focus();
+                return;
+            }
+            if (Convert.ToInt32(txtDiem45Phut.Text) < 0)
+            {
+                MessageBox.Show("Điểm 45 phút không được nhỏ hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtDiem45Phut.Focus();
+                return;
+            }
             if (txtDiemHocKi.Text == "")
             {
                 sql = "insert into tblBangDiem(sMaHocSinh, sMaGiaoVien, sMaMonHoc, sNamHoc, sHocKy, fDiem15Phut, fDiem45Phut) values (N'" + cboMaHS.SelectedValue.ToString() + "', N'" + cboMaGV.SelectedValue.ToString() + "', N'" + cboMaMH.SelectedValue.ToString() + "', '" + txtNamHoc.Text.Trim() + "', N'" + cboHocKy.Text.Trim() + "', " + txtDiem15Phut.Text.Trim() + ", " + txtDiem45Phut.Text.Trim() + ")";

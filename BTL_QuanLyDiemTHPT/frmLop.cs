@@ -126,5 +126,16 @@ namespace BTL_QuanLyDiemTHPT
                 f.Show();
             }
         }
+
+        private void btnBoQua_Click(object sender, EventArgs e)
+        {
+            resetValue();
+            btnXoa.Enabled = true;
+            btnSua.Enabled = true;
+            btnThem.Enabled = true;
+            btnBoQua.Enabled = false;
+            btnLuu.Enabled = false;
+            txtMaLop.Enabled = false;
+        }
     }
 }

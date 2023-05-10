@@ -20,17 +20,17 @@ namespace BTL_QuanLyDiemTHPT.DS {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DSDiemHSTheoLop")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DiemTrongKhoang")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DSDiemHSTheoLop : global::System.Data.DataSet {
+    public partial class dsDiemTrongKhoang : global::System.Data.DataSet {
         
-        private DSDiemLopDataTable tableDSDiemLop;
+        private DiemTrongKhongDataTable tableDiemTrongKhong;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DSDiemHSTheoLop() {
+        public dsDiemTrongKhoang() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace BTL_QuanLyDiemTHPT.DS {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected DSDiemHSTheoLop(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected dsDiemTrongKhoang(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace BTL_QuanLyDiemTHPT.DS {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["DSDiemLop"] != null)) {
-                    base.Tables.Add(new DSDiemLopDataTable(ds.Tables["DSDiemLop"]));
+                if ((ds.Tables["DiemTrongKhong"] != null)) {
+                    base.Tables.Add(new DiemTrongKhongDataTable(ds.Tables["DiemTrongKhong"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace BTL_QuanLyDiemTHPT.DS {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DSDiemLopDataTable DSDiemLop {
+        public DiemTrongKhongDataTable DiemTrongKhong {
             get {
-                return this.tableDSDiemLop;
+                return this.tableDiemTrongKhong;
             }
         }
         
@@ -127,7 +127,7 @@ namespace BTL_QuanLyDiemTHPT.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DSDiemHSTheoLop cln = ((DSDiemHSTheoLop)(base.Clone()));
+            dsDiemTrongKhoang cln = ((dsDiemTrongKhoang)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace BTL_QuanLyDiemTHPT.DS {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["DSDiemLop"] != null)) {
-                    base.Tables.Add(new DSDiemLopDataTable(ds.Tables["DSDiemLop"]));
+                if ((ds.Tables["DiemTrongKhong"] != null)) {
+                    base.Tables.Add(new DiemTrongKhongDataTable(ds.Tables["DiemTrongKhong"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace BTL_QuanLyDiemTHPT.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableDSDiemLop = ((DSDiemLopDataTable)(base.Tables["DSDiemLop"]));
+            this.tableDiemTrongKhong = ((DiemTrongKhongDataTable)(base.Tables["DiemTrongKhong"]));
             if ((initTable == true)) {
-                if ((this.tableDSDiemLop != null)) {
-                    this.tableDSDiemLop.InitVars();
+                if ((this.tableDiemTrongKhong != null)) {
+                    this.tableDiemTrongKhong.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace BTL_QuanLyDiemTHPT.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DSDiemHSTheoLop";
+            this.DataSetName = "DiemTrongKhoang";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DSDiemHSTheoLop.xsd";
+            this.Namespace = "http://tempuri.org/DiemTrongKhoang.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableDSDiemLop = new DSDiemLopDataTable();
-            base.Tables.Add(this.tableDSDiemLop);
+            this.tableDiemTrongKhong = new DiemTrongKhongDataTable();
+            base.Tables.Add(this.tableDiemTrongKhong);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeDSDiemLop() {
+        private bool ShouldSerializeDiemTrongKhong() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace BTL_QuanLyDiemTHPT.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DSDiemHSTheoLop ds = new DSDiemHSTheoLop();
+            dsDiemTrongKhoang ds = new dsDiemTrongKhoang();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,41 +270,33 @@ namespace BTL_QuanLyDiemTHPT.DS {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void DSDiemLopRowChangeEventHandler(object sender, DSDiemLopRowChangeEvent e);
+        public delegate void DiemTrongKhongRowChangeEventHandler(object sender, DiemTrongKhongRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DSDiemLopDataTable : global::System.Data.TypedTableBase<DSDiemLopRow> {
+        public partial class DiemTrongKhongDataTable : global::System.Data.TypedTableBase<DiemTrongKhongRow> {
             
             private global::System.Data.DataColumn columnsTenLop;
+            
+            private global::System.Data.DataColumn columnsHocKy;
+            
+            private global::System.Data.DataColumn columnsNamHoc;
             
             private global::System.Data.DataColumn columnsMaHocSinh;
             
             private global::System.Data.DataColumn columnsHoTen;
             
-            private global::System.Data.DataColumn columnsTenGiaoVien;
-            
-            private global::System.Data.DataColumn columnsTenMonHoc;
-            
-            private global::System.Data.DataColumn columnsNamHoc;
-            
-            private global::System.Data.DataColumn columnsHocKy;
-            
-            private global::System.Data.DataColumn columnfDiem15Phut;
-            
-            private global::System.Data.DataColumn columnfDiem45Phut;
-            
             private global::System.Data.DataColumn columnfDiemThi;
             
-            private global::System.Data.DataColumn columnsXepLoai;
+            private global::System.Data.DataColumn columnsTenMon;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DSDiemLopDataTable() {
-                this.TableName = "DSDiemLop";
+            public DiemTrongKhongDataTable() {
+                this.TableName = "DiemTrongKhong";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -312,7 +304,7 @@ namespace BTL_QuanLyDiemTHPT.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DSDiemLopDataTable(global::System.Data.DataTable table) {
+            internal DiemTrongKhongDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -329,7 +321,7 @@ namespace BTL_QuanLyDiemTHPT.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected DSDiemLopDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DiemTrongKhongDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -339,6 +331,22 @@ namespace BTL_QuanLyDiemTHPT.DS {
             public global::System.Data.DataColumn sTenLopColumn {
                 get {
                     return this.columnsTenLop;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn sHocKyColumn {
+                get {
+                    return this.columnsHocKy;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn sNamHocColumn {
+                get {
+                    return this.columnsNamHoc;
                 }
             }
             
@@ -360,54 +368,6 @@ namespace BTL_QuanLyDiemTHPT.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sTenGiaoVienColumn {
-                get {
-                    return this.columnsTenGiaoVien;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sTenMonHocColumn {
-                get {
-                    return this.columnsTenMonHoc;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sNamHocColumn {
-                get {
-                    return this.columnsNamHoc;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sHocKyColumn {
-                get {
-                    return this.columnsHocKy;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn fDiem15PhutColumn {
-                get {
-                    return this.columnfDiem15Phut;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn fDiem45PhutColumn {
-                get {
-                    return this.columnfDiem45Phut;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn fDiemThiColumn {
                 get {
                     return this.columnfDiemThi;
@@ -416,9 +376,9 @@ namespace BTL_QuanLyDiemTHPT.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sXepLoaiColumn {
+            public global::System.Data.DataColumn sTenMonColumn {
                 get {
-                    return this.columnsXepLoai;
+                    return this.columnsTenMon;
                 }
             }
             
@@ -433,55 +393,51 @@ namespace BTL_QuanLyDiemTHPT.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DSDiemLopRow this[int index] {
+            public DiemTrongKhongRow this[int index] {
                 get {
-                    return ((DSDiemLopRow)(this.Rows[index]));
+                    return ((DiemTrongKhongRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DSDiemLopRowChangeEventHandler DSDiemLopRowChanging;
+            public event DiemTrongKhongRowChangeEventHandler DiemTrongKhongRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DSDiemLopRowChangeEventHandler DSDiemLopRowChanged;
+            public event DiemTrongKhongRowChangeEventHandler DiemTrongKhongRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DSDiemLopRowChangeEventHandler DSDiemLopRowDeleting;
+            public event DiemTrongKhongRowChangeEventHandler DiemTrongKhongRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DSDiemLopRowChangeEventHandler DSDiemLopRowDeleted;
+            public event DiemTrongKhongRowChangeEventHandler DiemTrongKhongRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddDSDiemLopRow(DSDiemLopRow row) {
+            public void AddDiemTrongKhongRow(DiemTrongKhongRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DSDiemLopRow AddDSDiemLopRow(string sTenLop, string sMaHocSinh, string sHoTen, string sTenGiaoVien, string sTenMonHoc, string sNamHoc, string sHocKy, string fDiem15Phut, string fDiem45Phut, string fDiemThi, string sXepLoai) {
-                DSDiemLopRow rowDSDiemLopRow = ((DSDiemLopRow)(this.NewRow()));
+            public DiemTrongKhongRow AddDiemTrongKhongRow(string sTenLop, string sHocKy, string sNamHoc, string sMaHocSinh, string sHoTen, string fDiemThi, string sTenMon) {
+                DiemTrongKhongRow rowDiemTrongKhongRow = ((DiemTrongKhongRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         sTenLop,
+                        sHocKy,
+                        sNamHoc,
                         sMaHocSinh,
                         sHoTen,
-                        sTenGiaoVien,
-                        sTenMonHoc,
-                        sNamHoc,
-                        sHocKy,
-                        fDiem15Phut,
-                        fDiem45Phut,
                         fDiemThi,
-                        sXepLoai};
-                rowDSDiemLopRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDSDiemLopRow);
-                return rowDSDiemLopRow;
+                        sTenMon};
+                rowDiemTrongKhongRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDiemTrongKhongRow);
+                return rowDiemTrongKhongRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DSDiemLopDataTable cln = ((DSDiemLopDataTable)(base.Clone()));
+                DiemTrongKhongDataTable cln = ((DiemTrongKhongDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -489,23 +445,19 @@ namespace BTL_QuanLyDiemTHPT.DS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DSDiemLopDataTable();
+                return new DiemTrongKhongDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnsTenLop = base.Columns["sTenLop"];
+                this.columnsHocKy = base.Columns["sHocKy"];
+                this.columnsNamHoc = base.Columns["sNamHoc"];
                 this.columnsMaHocSinh = base.Columns["sMaHocSinh"];
                 this.columnsHoTen = base.Columns["sHoTen"];
-                this.columnsTenGiaoVien = base.Columns["sTenGiaoVien"];
-                this.columnsTenMonHoc = base.Columns["sTenMonHoc"];
-                this.columnsNamHoc = base.Columns["sNamHoc"];
-                this.columnsHocKy = base.Columns["sHocKy"];
-                this.columnfDiem15Phut = base.Columns["fDiem15Phut"];
-                this.columnfDiem45Phut = base.Columns["fDiem45Phut"];
                 this.columnfDiemThi = base.Columns["fDiemThi"];
-                this.columnsXepLoai = base.Columns["sXepLoai"];
+                this.columnsTenMon = base.Columns["sTenMon"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -513,52 +465,44 @@ namespace BTL_QuanLyDiemTHPT.DS {
             private void InitClass() {
                 this.columnsTenLop = new global::System.Data.DataColumn("sTenLop", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsTenLop);
+                this.columnsHocKy = new global::System.Data.DataColumn("sHocKy", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsHocKy);
+                this.columnsNamHoc = new global::System.Data.DataColumn("sNamHoc", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsNamHoc);
                 this.columnsMaHocSinh = new global::System.Data.DataColumn("sMaHocSinh", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsMaHocSinh);
                 this.columnsHoTen = new global::System.Data.DataColumn("sHoTen", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsHoTen);
-                this.columnsTenGiaoVien = new global::System.Data.DataColumn("sTenGiaoVien", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsTenGiaoVien);
-                this.columnsTenMonHoc = new global::System.Data.DataColumn("sTenMonHoc", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsTenMonHoc);
-                this.columnsNamHoc = new global::System.Data.DataColumn("sNamHoc", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsNamHoc);
-                this.columnsHocKy = new global::System.Data.DataColumn("sHocKy", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsHocKy);
-                this.columnfDiem15Phut = new global::System.Data.DataColumn("fDiem15Phut", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfDiem15Phut);
-                this.columnfDiem45Phut = new global::System.Data.DataColumn("fDiem45Phut", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfDiem45Phut);
                 this.columnfDiemThi = new global::System.Data.DataColumn("fDiemThi", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfDiemThi);
-                this.columnsXepLoai = new global::System.Data.DataColumn("sXepLoai", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsXepLoai);
+                this.columnsTenMon = new global::System.Data.DataColumn("sTenMon", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsTenMon);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DSDiemLopRow NewDSDiemLopRow() {
-                return ((DSDiemLopRow)(this.NewRow()));
+            public DiemTrongKhongRow NewDiemTrongKhongRow() {
+                return ((DiemTrongKhongRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DSDiemLopRow(builder);
+                return new DiemTrongKhongRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DSDiemLopRow);
+                return typeof(DiemTrongKhongRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DSDiemLopRowChanged != null)) {
-                    this.DSDiemLopRowChanged(this, new DSDiemLopRowChangeEvent(((DSDiemLopRow)(e.Row)), e.Action));
+                if ((this.DiemTrongKhongRowChanged != null)) {
+                    this.DiemTrongKhongRowChanged(this, new DiemTrongKhongRowChangeEvent(((DiemTrongKhongRow)(e.Row)), e.Action));
                 }
             }
             
@@ -566,8 +510,8 @@ namespace BTL_QuanLyDiemTHPT.DS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DSDiemLopRowChanging != null)) {
-                    this.DSDiemLopRowChanging(this, new DSDiemLopRowChangeEvent(((DSDiemLopRow)(e.Row)), e.Action));
+                if ((this.DiemTrongKhongRowChanging != null)) {
+                    this.DiemTrongKhongRowChanging(this, new DiemTrongKhongRowChangeEvent(((DiemTrongKhongRow)(e.Row)), e.Action));
                 }
             }
             
@@ -575,8 +519,8 @@ namespace BTL_QuanLyDiemTHPT.DS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DSDiemLopRowDeleted != null)) {
-                    this.DSDiemLopRowDeleted(this, new DSDiemLopRowChangeEvent(((DSDiemLopRow)(e.Row)), e.Action));
+                if ((this.DiemTrongKhongRowDeleted != null)) {
+                    this.DiemTrongKhongRowDeleted(this, new DiemTrongKhongRowChangeEvent(((DiemTrongKhongRow)(e.Row)), e.Action));
                 }
             }
             
@@ -584,14 +528,14 @@ namespace BTL_QuanLyDiemTHPT.DS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DSDiemLopRowDeleting != null)) {
-                    this.DSDiemLopRowDeleting(this, new DSDiemLopRowChangeEvent(((DSDiemLopRow)(e.Row)), e.Action));
+                if ((this.DiemTrongKhongRowDeleting != null)) {
+                    this.DiemTrongKhongRowDeleting(this, new DiemTrongKhongRowChangeEvent(((DiemTrongKhongRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveDSDiemLopRow(DSDiemLopRow row) {
+            public void RemoveDiemTrongKhongRow(DiemTrongKhongRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -600,7 +544,7 @@ namespace BTL_QuanLyDiemTHPT.DS {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DSDiemHSTheoLop ds = new DSDiemHSTheoLop();
+                dsDiemTrongKhoang ds = new dsDiemTrongKhoang();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -618,7 +562,7 @@ namespace BTL_QuanLyDiemTHPT.DS {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DSDiemLopDataTable";
+                attribute2.FixedValue = "DiemTrongKhongDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -662,15 +606,15 @@ namespace BTL_QuanLyDiemTHPT.DS {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DSDiemLopRow : global::System.Data.DataRow {
+        public partial class DiemTrongKhongRow : global::System.Data.DataRow {
             
-            private DSDiemLopDataTable tableDSDiemLop;
+            private DiemTrongKhongDataTable tableDiemTrongKhong;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DSDiemLopRow(global::System.Data.DataRowBuilder rb) : 
+            internal DiemTrongKhongRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDSDiemLop = ((DSDiemLopDataTable)(this.Table));
+                this.tableDiemTrongKhong = ((DiemTrongKhongDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -678,94 +622,14 @@ namespace BTL_QuanLyDiemTHPT.DS {
             public string sTenLop {
                 get {
                     try {
-                        return ((string)(this[this.tableDSDiemLop.sTenLopColumn]));
+                        return ((string)(this[this.tableDiemTrongKhong.sTenLopColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sTenLop\' in table \'DSDiemLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'sTenLop\' in table \'DiemTrongKhong\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDSDiemLop.sTenLopColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sMaHocSinh {
-                get {
-                    try {
-                        return ((string)(this[this.tableDSDiemLop.sMaHocSinhColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sMaHocSinh\' in table \'DSDiemLop\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDSDiemLop.sMaHocSinhColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sHoTen {
-                get {
-                    try {
-                        return ((string)(this[this.tableDSDiemLop.sHoTenColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sHoTen\' in table \'DSDiemLop\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDSDiemLop.sHoTenColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sTenGiaoVien {
-                get {
-                    try {
-                        return ((string)(this[this.tableDSDiemLop.sTenGiaoVienColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sTenGiaoVien\' in table \'DSDiemLop\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDSDiemLop.sTenGiaoVienColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sTenMonHoc {
-                get {
-                    try {
-                        return ((string)(this[this.tableDSDiemLop.sTenMonHocColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sTenMonHoc\' in table \'DSDiemLop\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDSDiemLop.sTenMonHocColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sNamHoc {
-                get {
-                    try {
-                        return ((string)(this[this.tableDSDiemLop.sNamHocColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sNamHoc\' in table \'DSDiemLop\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDSDiemLop.sNamHocColumn] = value;
+                    this[this.tableDiemTrongKhong.sTenLopColumn] = value;
                 }
             }
             
@@ -774,46 +638,62 @@ namespace BTL_QuanLyDiemTHPT.DS {
             public string sHocKy {
                 get {
                     try {
-                        return ((string)(this[this.tableDSDiemLop.sHocKyColumn]));
+                        return ((string)(this[this.tableDiemTrongKhong.sHocKyColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sHocKy\' in table \'DSDiemLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'sHocKy\' in table \'DiemTrongKhong\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDSDiemLop.sHocKyColumn] = value;
+                    this[this.tableDiemTrongKhong.sHocKyColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string fDiem15Phut {
+            public string sNamHoc {
                 get {
                     try {
-                        return ((string)(this[this.tableDSDiemLop.fDiem15PhutColumn]));
+                        return ((string)(this[this.tableDiemTrongKhong.sNamHocColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'fDiem15Phut\' in table \'DSDiemLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'sNamHoc\' in table \'DiemTrongKhong\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDSDiemLop.fDiem15PhutColumn] = value;
+                    this[this.tableDiemTrongKhong.sNamHocColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string fDiem45Phut {
+            public string sMaHocSinh {
                 get {
                     try {
-                        return ((string)(this[this.tableDSDiemLop.fDiem45PhutColumn]));
+                        return ((string)(this[this.tableDiemTrongKhong.sMaHocSinhColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'fDiem45Phut\' in table \'DSDiemLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'sMaHocSinh\' in table \'DiemTrongKhong\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDSDiemLop.fDiem45PhutColumn] = value;
+                    this[this.tableDiemTrongKhong.sMaHocSinhColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string sHoTen {
+                get {
+                    try {
+                        return ((string)(this[this.tableDiemTrongKhong.sHoTenColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'sHoTen\' in table \'DiemTrongKhong\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDiemTrongKhong.sHoTenColumn] = value;
                 }
             }
             
@@ -822,163 +702,115 @@ namespace BTL_QuanLyDiemTHPT.DS {
             public string fDiemThi {
                 get {
                     try {
-                        return ((string)(this[this.tableDSDiemLop.fDiemThiColumn]));
+                        return ((string)(this[this.tableDiemTrongKhong.fDiemThiColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'fDiemThi\' in table \'DSDiemLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'fDiemThi\' in table \'DiemTrongKhong\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDSDiemLop.fDiemThiColumn] = value;
+                    this[this.tableDiemTrongKhong.fDiemThiColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sXepLoai {
+            public string sTenMon {
                 get {
                     try {
-                        return ((string)(this[this.tableDSDiemLop.sXepLoaiColumn]));
+                        return ((string)(this[this.tableDiemTrongKhong.sTenMonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sXepLoai\' in table \'DSDiemLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'sTenMon\' in table \'DiemTrongKhong\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDSDiemLop.sXepLoaiColumn] = value;
+                    this[this.tableDiemTrongKhong.sTenMonColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IssTenLopNull() {
-                return this.IsNull(this.tableDSDiemLop.sTenLopColumn);
+                return this.IsNull(this.tableDiemTrongKhong.sTenLopColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetsTenLopNull() {
-                this[this.tableDSDiemLop.sTenLopColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssMaHocSinhNull() {
-                return this.IsNull(this.tableDSDiemLop.sMaHocSinhColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsMaHocSinhNull() {
-                this[this.tableDSDiemLop.sMaHocSinhColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssHoTenNull() {
-                return this.IsNull(this.tableDSDiemLop.sHoTenColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsHoTenNull() {
-                this[this.tableDSDiemLop.sHoTenColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssTenGiaoVienNull() {
-                return this.IsNull(this.tableDSDiemLop.sTenGiaoVienColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsTenGiaoVienNull() {
-                this[this.tableDSDiemLop.sTenGiaoVienColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssTenMonHocNull() {
-                return this.IsNull(this.tableDSDiemLop.sTenMonHocColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsTenMonHocNull() {
-                this[this.tableDSDiemLop.sTenMonHocColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssNamHocNull() {
-                return this.IsNull(this.tableDSDiemLop.sNamHocColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsNamHocNull() {
-                this[this.tableDSDiemLop.sNamHocColumn] = global::System.Convert.DBNull;
+                this[this.tableDiemTrongKhong.sTenLopColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IssHocKyNull() {
-                return this.IsNull(this.tableDSDiemLop.sHocKyColumn);
+                return this.IsNull(this.tableDiemTrongKhong.sHocKyColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetsHocKyNull() {
-                this[this.tableDSDiemLop.sHocKyColumn] = global::System.Convert.DBNull;
+                this[this.tableDiemTrongKhong.sHocKyColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsfDiem15PhutNull() {
-                return this.IsNull(this.tableDSDiemLop.fDiem15PhutColumn);
+            public bool IssNamHocNull() {
+                return this.IsNull(this.tableDiemTrongKhong.sNamHocColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetfDiem15PhutNull() {
-                this[this.tableDSDiemLop.fDiem15PhutColumn] = global::System.Convert.DBNull;
+            public void SetsNamHocNull() {
+                this[this.tableDiemTrongKhong.sNamHocColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsfDiem45PhutNull() {
-                return this.IsNull(this.tableDSDiemLop.fDiem45PhutColumn);
+            public bool IssMaHocSinhNull() {
+                return this.IsNull(this.tableDiemTrongKhong.sMaHocSinhColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetfDiem45PhutNull() {
-                this[this.tableDSDiemLop.fDiem45PhutColumn] = global::System.Convert.DBNull;
+            public void SetsMaHocSinhNull() {
+                this[this.tableDiemTrongKhong.sMaHocSinhColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IssHoTenNull() {
+                return this.IsNull(this.tableDiemTrongKhong.sHoTenColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetsHoTenNull() {
+                this[this.tableDiemTrongKhong.sHoTenColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsfDiemThiNull() {
-                return this.IsNull(this.tableDSDiemLop.fDiemThiColumn);
+                return this.IsNull(this.tableDiemTrongKhong.fDiemThiColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetfDiemThiNull() {
-                this[this.tableDSDiemLop.fDiemThiColumn] = global::System.Convert.DBNull;
+                this[this.tableDiemTrongKhong.fDiemThiColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssXepLoaiNull() {
-                return this.IsNull(this.tableDSDiemLop.sXepLoaiColumn);
+            public bool IssTenMonNull() {
+                return this.IsNull(this.tableDiemTrongKhong.sTenMonColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsXepLoaiNull() {
-                this[this.tableDSDiemLop.sXepLoaiColumn] = global::System.Convert.DBNull;
+            public void SetsTenMonNull() {
+                this[this.tableDiemTrongKhong.sTenMonColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -986,22 +818,22 @@ namespace BTL_QuanLyDiemTHPT.DS {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class DSDiemLopRowChangeEvent : global::System.EventArgs {
+        public class DiemTrongKhongRowChangeEvent : global::System.EventArgs {
             
-            private DSDiemLopRow eventRow;
+            private DiemTrongKhongRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DSDiemLopRowChangeEvent(DSDiemLopRow row, global::System.Data.DataRowAction action) {
+            public DiemTrongKhongRowChangeEvent(DiemTrongKhongRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DSDiemLopRow Row {
+            public DiemTrongKhongRow Row {
                 get {
                     return this.eventRow;
                 }

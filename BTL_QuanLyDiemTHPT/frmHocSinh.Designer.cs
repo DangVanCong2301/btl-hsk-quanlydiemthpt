@@ -54,6 +54,8 @@ namespace BTL_QuanLyDiemTHPT
             this.label3 = new System.Windows.Forms.Label();
             this.cboLop = new System.Windows.Forms.ComboBox();
             this.groupBo = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTuKhoa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBo.SuspendLayout();
@@ -287,6 +289,8 @@ namespace BTL_QuanLyDiemTHPT
             // 
             // groupBo
             // 
+            this.groupBo.Controls.Add(this.txtTuKhoa);
+            this.groupBo.Controls.Add(this.label8);
             this.groupBo.Controls.Add(this.txtMaHS);
             this.groupBo.Controls.Add(this.label2);
             this.groupBo.Controls.Add(this.dtpNgaySinh);
@@ -303,6 +307,23 @@ namespace BTL_QuanLyDiemTHPT
             this.groupBo.TabIndex = 58;
             this.groupBo.TabStop = false;
             this.groupBo.Text = "Thông tin học sinh";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(554, 123);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 17);
+            this.label8.TabIndex = 57;
+            this.label8.Text = "Nhập từ khoá";
+            // 
+            // txtTuKhoa
+            // 
+            this.txtTuKhoa.Location = new System.Drawing.Point(679, 122);
+            this.txtTuKhoa.Name = "txtTuKhoa";
+            this.txtTuKhoa.Size = new System.Drawing.Size(183, 22);
+            this.txtTuKhoa.TabIndex = 58;
+            this.txtTuKhoa.TextChanged += new System.EventHandler(this.txtTuKhoa_TextChanged);
             // 
             // frmHocSinh
             // 
@@ -361,5 +382,7 @@ namespace BTL_QuanLyDiemTHPT
         private System.Windows.Forms.ComboBox cboLop;
         private System.Windows.Forms.GroupBox groupBo;
         private System.Windows.Forms.Button btnIn;
+        private System.Windows.Forms.TextBox txtTuKhoa;
+        private System.Windows.Forms.Label label8;
     }
 }

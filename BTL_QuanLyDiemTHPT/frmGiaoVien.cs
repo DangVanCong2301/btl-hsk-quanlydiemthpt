@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -122,6 +123,12 @@ namespace BTL_QuanLyDiemTHPT
             {
                 gt = "Nữ";
             }
+            if (txtDiaChi.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập quê quán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtDiaChi.Focus();
+                return;
+            }
             DateTime ngaySinh = Convert.ToDateTime(dtpNgaySinh.Value);
             DateTime ngayHienTai = Convert.ToDateTime("4/5/2023");
             TimeSpan time = ngayHienTai - ngaySinh;
@@ -212,6 +219,7 @@ namespace BTL_QuanLyDiemTHPT
 
         private void btnHienDS_Click(object sender, EventArgs e)
         {
+                
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -257,6 +265,34 @@ namespace BTL_QuanLyDiemTHPT
             btnSua.Enabled = true;
             btnLuu.Enabled = false;
             txtMaGiaoVien.Enabled = false;
+        }
+
+        private void txtTuKhoa_TextChanged(object sender, EventArgs e)
+        {
+            string proc = "timKiemGV";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@TuKhoa", txtTuKhoa.Text.Trim());
+            tblGiaoVien = Function.Functions.timKiem(proc, cmd);
+            dgvGiaoVien.DataSource = tblGiaoVien;
+            tblGiaoVien.Columns.Add("STT");
+            for (int i = 0; i < tblGiaoVien.Rows.Count; i++)
+            {
+                tblGiaoVien.Rows[i]["STT"] = i + 1;
+                dgvGiaoVien.DataSource = tblGiaoVien;
+                dgvGiaoVien.Columns["STT"].DisplayIndex = 0;
+                dgvGiaoVien.Columns[0].HeaderText = "Mã giáo viên";
+                dgvGiaoVien.Columns[1].HeaderText = "Tên giáo viên";
+                dgvGiaoVien.Columns[2].HeaderText = "Giới tính";
+                dgvGiaoVien.Columns[3].HeaderText = "Ngày sinh";
+                dgvGiaoVien.Columns[4].HeaderText = "Quê quán";
+                dgvGiaoVien.Columns[0].Width = 100;
+                dgvGiaoVien.Columns[1].Width = 100;
+                dgvGiaoVien.Columns[2].Width = 100;
+                dgvGiaoVien.Columns[3].Width = 80;
+                dgvGiaoVien.Columns[4].Width = 200;
+                dgvGiaoVien.AllowUserToAddRows = false;
+                dgvGiaoVien.EditMode = DataGridViewEditMode.EditProgrammatically;
+            }
         }
     }
 }

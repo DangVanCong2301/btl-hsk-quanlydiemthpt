@@ -16,7 +16,7 @@ namespace BTL_QuanLyDiemTHPT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMainForm());
+            Application.Run(new frmDangNhap());
         }
     }
 }

@@ -47,14 +47,14 @@ namespace BTL_QuanLyDiemTHPT
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.btnTim = new System.Windows.Forms.Button();
-            this.btnHienDS = new System.Windows.Forms.Button();
+            this.txtTuKhoa = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(899, 523);
+            this.btnDong.Location = new System.Drawing.Point(873, 523);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 45);
             this.btnDong.TabIndex = 62;
@@ -64,7 +64,7 @@ namespace BTL_QuanLyDiemTHPT
             // 
             // btnBoQua
             // 
-            this.btnBoQua.Location = new System.Drawing.Point(523, 523);
+            this.btnBoQua.Location = new System.Drawing.Point(690, 523);
             this.btnBoQua.Name = "btnBoQua";
             this.btnBoQua.Size = new System.Drawing.Size(75, 45);
             this.btnBoQua.TabIndex = 61;
@@ -74,7 +74,7 @@ namespace BTL_QuanLyDiemTHPT
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(399, 523);
+            this.btnLuu.Location = new System.Drawing.Point(497, 523);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 45);
             this.btnLuu.TabIndex = 60;
@@ -84,7 +84,7 @@ namespace BTL_QuanLyDiemTHPT
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(276, 523);
+            this.btnSua.Location = new System.Drawing.Point(321, 523);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 45);
             this.btnSua.TabIndex = 59;
@@ -94,7 +94,7 @@ namespace BTL_QuanLyDiemTHPT
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(156, 523);
+            this.btnXoa.Location = new System.Drawing.Point(180, 523);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 45);
             this.btnXoa.TabIndex = 58;
@@ -218,33 +218,30 @@ namespace BTL_QuanLyDiemTHPT
             this.dtpNgaySinh.Size = new System.Drawing.Size(183, 22);
             this.dtpNgaySinh.TabIndex = 63;
             // 
-            // btnTim
+            // txtTuKhoa
             // 
-            this.btnTim.Location = new System.Drawing.Point(641, 523);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(75, 45);
-            this.btnTim.TabIndex = 64;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = true;
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            this.txtTuKhoa.Location = new System.Drawing.Point(716, 151);
+            this.txtTuKhoa.Name = "txtTuKhoa";
+            this.txtTuKhoa.Size = new System.Drawing.Size(183, 22);
+            this.txtTuKhoa.TabIndex = 67;
+            this.txtTuKhoa.TextChanged += new System.EventHandler(this.txtTuKhoa_TextChanged);
             // 
-            // btnHienDS
+            // label3
             // 
-            this.btnHienDS.Location = new System.Drawing.Point(758, 523);
-            this.btnHienDS.Name = "btnHienDS";
-            this.btnHienDS.Size = new System.Drawing.Size(122, 45);
-            this.btnHienDS.TabIndex = 65;
-            this.btnHienDS.Text = "Hiện danh sách";
-            this.btnHienDS.UseVisualStyleBackColor = true;
-            this.btnHienDS.Click += new System.EventHandler(this.btnHienDS_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(583, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 17);
+            this.label3.TabIndex = 66;
+            this.label3.Text = "Nhập từ khoá:";
             // 
             // frmGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 594);
-            this.Controls.Add(this.btnHienDS);
-            this.Controls.Add(this.btnTim);
+            this.Controls.Add(this.txtTuKhoa);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dtpNgaySinh);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnBoQua);
@@ -292,7 +289,7 @@ namespace BTL_QuanLyDiemTHPT
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
-        private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.Button btnHienDS;
+        private System.Windows.Forms.TextBox txtTuKhoa;
+        private System.Windows.Forms.Label label3;
     }
 }

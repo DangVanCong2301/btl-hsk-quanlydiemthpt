@@ -131,30 +131,30 @@
       <DependentUpon>frmNgayTrongKhoang.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection\DBConnection.cs" />
-    <Compile Include="DS\DSDiemHSTheoLop.Designer.cs">
+    <Compile Include="DS\dsDSDiemHSTheoLop.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DSDiemHSTheoLop.xsd</DependentUpon>
+      <DependentUpon>dsDSDiemHSTheoLop.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS\BangDiem.Designer.cs">
+    <Compile Include="DS\dsBangDiem.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BangDiem.xsd</DependentUpon>
+      <DependentUpon>dsBangDiem.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS\DiemTrongKhoang.Designer.cs">
+    <Compile Include="DS\dsDiemTrongKhoang.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DiemTrongKhoang.xsd</DependentUpon>
+      <DependentUpon>dsDiemTrongKhoang.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS\DSLuuBan.Designer.cs">
+    <Compile Include="DS\dsDSCanhCaoHT.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DSLuuBan.xsd</DependentUpon>
+      <DependentUpon>dsDSCanhCaoHT.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS\DSDiemHS.Designer.cs">
+    <Compile Include="DS\dsDanhSachDiemHocSinh.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DSDiemHS.xsd</DependentUpon>
+      <DependentUpon>dsDanhSachDiemHocSinh.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmBangDiem.cs">
       <SubType>Form</SubType>
@@ -211,18 +211,18 @@
       <DependentUpon>frmMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Function\Functions.cs" />
-    <Compile Include="DS\InDSThi.cs">
-      <DependentUpon>InDSThi.xsd</DependentUpon>
+    <Compile Include="DS\dsDSThi.cs">
+      <DependentUpon>dsDSThi.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS\InDSThi.Designer.cs">
+    <Compile Include="DS\dsDSThi.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>InDSThi.xsd</DependentUpon>
+      <DependentUpon>dsDSThi.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS\khoangNgayNhapDiem.Designer.cs">
+    <Compile Include="DS\dsKhoangNgayNhapDiem.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>khoangNgayNhapDiem.xsd</DependentUpon>
+      <DependentUpon>dsKhoangNgayNhapDiem.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -368,38 +368,38 @@
     <None Include="DS\dsDanhSachHocSinhLop.xss">
       <DependentUpon>dsDanhSachHocSinhLop.xsd</DependentUpon>
     </None>
-    <None Include="DS\DSDiemHSTheoLop.xsc">
-      <DependentUpon>DSDiemHSTheoLop.xsd</DependentUpon>
+    <None Include="DS\dsDSDiemHSTheoLop.xsc">
+      <DependentUpon>dsDSDiemHSTheoLop.xsd</DependentUpon>
     </None>
-    <None Include="DS\DSDiemHSTheoLop.xsd">
+    <None Include="DS\dsDSDiemHSTheoLop.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSDiemHSTheoLop.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsDSDiemHSTheoLop.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DS\DSDiemHSTheoLop.xss">
-      <DependentUpon>DSDiemHSTheoLop.xsd</DependentUpon>
+    <None Include="DS\dsDSDiemHSTheoLop.xss">
+      <DependentUpon>dsDSDiemHSTheoLop.xsd</DependentUpon>
     </None>
-    <None Include="DS\BangDiem.xsc">
-      <DependentUpon>BangDiem.xsd</DependentUpon>
+    <None Include="DS\dsBangDiem.xsc">
+      <DependentUpon>dsBangDiem.xsd</DependentUpon>
     </None>
-    <None Include="DS\BangDiem.xsd">
+    <None Include="DS\dsBangDiem.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BangDiem.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsBangDiem.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DS\BangDiem.xss">
-      <DependentUpon>BangDiem.xsd</DependentUpon>
+    <None Include="DS\dsBangDiem.xss">
+      <DependentUpon>dsBangDiem.xsd</DependentUpon>
     </None>
-    <None Include="DS\DiemTrongKhoang.xsc">
-      <DependentUpon>DiemTrongKhoang.xsd</DependentUpon>
+    <None Include="DS\dsDiemTrongKhoang.xsc">
+      <DependentUpon>dsDiemTrongKhoang.xsd</DependentUpon>
     </None>
-    <None Include="DS\DiemTrongKhoang.xsd">
+    <None Include="DS\dsDiemTrongKhoang.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiemTrongKhoang.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsDiemTrongKhoang.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DS\DiemTrongKhoang.xss">
-      <DependentUpon>DiemTrongKhoang.xsd</DependentUpon>
+    <None Include="DS\dsDiemTrongKhoang.xss">
+      <DependentUpon>dsDiemTrongKhoang.xsd</DependentUpon>
     </None>
     <None Include="DS\dsHocSinh.xsc">
       <DependentUpon>dsHocSinh.xsd</DependentUpon>
@@ -412,49 +412,49 @@
     <None Include="DS\dsHocSinh.xss">
       <DependentUpon>dsHocSinh.xsd</DependentUpon>
     </None>
-    <None Include="DS\DSLuuBan.xsc">
-      <DependentUpon>DSLuuBan.xsd</DependentUpon>
+    <None Include="DS\dsDSCanhCaoHT.xsc">
+      <DependentUpon>dsDSCanhCaoHT.xsd</DependentUpon>
     </None>
-    <None Include="DS\DSLuuBan.xsd">
+    <None Include="DS\dsDSCanhCaoHT.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSLuuBan.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsDSCanhCaoHT.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DS\DSLuuBan.xss">
-      <DependentUpon>DSLuuBan.xsd</DependentUpon>
+    <None Include="DS\dsDSCanhCaoHT.xss">
+      <DependentUpon>dsDSCanhCaoHT.xsd</DependentUpon>
     </None>
-    <None Include="DS\DSDiemHS.xsc">
-      <DependentUpon>DSDiemHS.xsd</DependentUpon>
+    <None Include="DS\dsDanhSachDiemHocSinh.xsc">
+      <DependentUpon>dsDanhSachDiemHocSinh.xsd</DependentUpon>
     </None>
-    <None Include="DS\DSDiemHS.xsd">
+    <None Include="DS\dsDanhSachDiemHocSinh.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSDiemHS.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsDanhSachDiemHocSinh.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DS\DSDiemHS.xss">
-      <DependentUpon>DSDiemHS.xsd</DependentUpon>
+    <None Include="DS\dsDanhSachDiemHocSinh.xss">
+      <DependentUpon>dsDanhSachDiemHocSinh.xsd</DependentUpon>
     </None>
-    <None Include="DS\InDSThi.xsc">
-      <DependentUpon>InDSThi.xsd</DependentUpon>
+    <None Include="DS\dsDSThi.xsc">
+      <DependentUpon>dsDSThi.xsd</DependentUpon>
     </None>
-    <None Include="DS\InDSThi.xsd">
+    <None Include="DS\dsDSThi.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>InDSThi.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsDSThi.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DS\InDSThi.xss">
-      <DependentUpon>InDSThi.xsd</DependentUpon>
+    <None Include="DS\dsDSThi.xss">
+      <DependentUpon>dsDSThi.xsd</DependentUpon>
     </None>
-    <None Include="DS\khoangNgayNhapDiem.xsc">
-      <DependentUpon>khoangNgayNhapDiem.xsd</DependentUpon>
+    <None Include="DS\dsKhoangNgayNhapDiem.xsc">
+      <DependentUpon>dsKhoangNgayNhapDiem.xsd</DependentUpon>
     </None>
-    <None Include="DS\khoangNgayNhapDiem.xsd">
+    <None Include="DS\dsKhoangNgayNhapDiem.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>khoangNgayNhapDiem.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsKhoangNgayNhapDiem.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DS\khoangNgayNhapDiem.xss">
-      <DependentUpon>khoangNgayNhapDiem.xsd</DependentUpon>
+    <None Include="DS\dsKhoangNgayNhapDiem.xss">
+      <DependentUpon>dsKhoangNgayNhapDiem.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

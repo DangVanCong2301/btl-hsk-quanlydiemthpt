@@ -73,6 +73,7 @@ namespace BTL_QuanLyDiemTHPT
             this.btnBoQua.TabIndex = 64;
             this.btnBoQua.Text = "Bỏ qua";
             this.btnBoQua.UseVisualStyleBackColor = true;
+            this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
             // 
             // btnLuu
             // 

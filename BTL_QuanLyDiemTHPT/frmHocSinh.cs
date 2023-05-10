@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,12 +56,26 @@ namespace BTL_QuanLyDiemTHPT
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            txtMaHS.Enabled = true;
-            txtMaHS.Focus();
+            string sql = "select count(tblHocSinh.sMaHocSinh) from tblHocSinh_tblLop "
+                + "inner join tblLop on tblLop.sMaLop = tblHocSinh_tblLop.sMaLop "
+                + "inner join tblHocSinh on tblHocSinh.sMaHocSinh = tblHocSinh_tblLop.sMaHocSinh "
+                + "inner join tblGiaoVien on tblGiaoVien.sMaGiaoVien = tblLop.sMaGiaoVien "
+                + " where tblLop.sMaLop = '" + cboLop.SelectedValue + "'";
+            int soLuongHS = Convert.ToInt32(Functions.getFileValues(sql));
+            txtMaHS.Enabled = false;
+            txtHoTen.Focus();
             btnThem.Enabled = false;
             btnLuu.Enabled = true;
             btnBoQua.Enabled = true;
             resetValues();
+            if (soLuongHS < 10)
+            {
+                txtMaHS.Text = cboLop.Text + "_HS0" + (soLuongHS + 1).ToString();
+            } else
+            {
+                txtMaHS.Text = cboLop.Text + "_HS" + (soLuongHS + 1).ToString();
+            }
+            // txtMaHS.Text = Functions.CreateKey(cboLop.Text + "_HS");
         }
 
         private void resetValues()
@@ -75,15 +90,15 @@ namespace BTL_QuanLyDiemTHPT
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string sql, gt;
-            string match = "^[a-zA-Z0-9 ]*$";
-            Regex rg = new Regex(match);
-            if (!rg.IsMatch(this.txtMaHS.Text))
-            {
-                MessageBox.Show("Mã học sinh không được có ký tự đặc biệt", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtMaHS.Text = "";
-                txtMaHS.Focus();
-                return;
-            }
+            //string match = "^[a-zA-Z0-9 ]*$";
+            //Regex rg = new Regex(match);
+            //if (!rg.IsMatch(this.txtMaHS.Text))
+            //{
+            //    MessageBox.Show("Mã học sinh không được có ký tự đặc biệt", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    txtMaHS.Text = "";
+            //    txtMaHS.Focus();
+            //    return;
+            //}
             if (txtMaHS.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập mã học sinh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -205,13 +220,13 @@ namespace BTL_QuanLyDiemTHPT
             }
             if(MessageBox.Show("Bạn có chắc chắn muốn xoá bản ghi ngày không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                string sql = "select * from tblHocSinh_Lop where sMaHocSinh = N'" + txtMaHS.Text.Trim() + "'";
-                if (Functions.checkKey(sql))
-                {
-                    MessageBox.Show("Mã học sinh này đang bị ràng buộc, bạn không thể xoá!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                sql = "delete tblHocSinh_tblLop where sMaHocSinh = N'" + txtMaHS.Text.Trim() + "' and sMaLop = N'" + cboLop.SelectedValue + "'";
+                //string sql = "select * from tblHocSinh_Lop where sMaHocSinh = N'" + txtMaHS.Text.Trim() + "'";
+                //if (Functions.checkKey(sql))
+                //{
+                //    MessageBox.Show("Mã học sinh này đang bị ràng buộc, bạn không thể xoá!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    return;
+                //}
+                string sql = "delete tblHocSinh_tblLop where sMaHocSinh = N'" + txtMaHS.Text.Trim() + "' and sMaLop = N'" + cboLop.SelectedValue + "'";
                 Functions.runSqlDel(sql);
                 sql = "delete tblHocSinh where sMaHocSinh = N'" + txtMaHS.Text.Trim() + "'";
                 Functions.runSqlDel(sql);
@@ -304,7 +319,60 @@ namespace BTL_QuanLyDiemTHPT
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string sql = "update tblHocSinh set sHoTen = N'" + txtHoTen.Text.Trim() + "', sGioiTinh";
+            string sql, gt;
+            if (tblHocSinh.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtMaHS.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn bản ghi nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMaHS.Focus();
+                return;
+            }
+            if (chkGioiTinh.Checked == true)
+            {
+                gt = "Nam";
+            }
+            else
+            {
+                gt = "Nữ";
+            }
+            sql = "update tblHocSinh set sHoTen = N'" + txtHoTen.Text.Trim().ToString() + "', sGioiTinh = N'" + gt + "', dNgaySinh = '" + dtpNgaySinh.Text + "', sQueQuan = N'" + txtQueQuan.Text.Trim().ToString() + "' where sMaHocSinh = N'" + txtMaHS.Text.Trim().ToString() + "'";
+            Function.Functions.runSql(sql);
+            loadDataGridView();
+            resetValues();
+            btnBoQua.Enabled = false;
+        }
+
+        private void txtTuKhoa_TextChanged(object sender, EventArgs e)
+        {
+            string proc = "timKiemHS";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@TuKhoa", txtTuKhoa.Text.Trim());
+            tblHocSinh = Functions.timKiem(proc, cmd);
+            tblHocSinh.Columns.Add("STT");
+            for (int i = 0; i < tblHocSinh.Rows.Count; i++)
+            {
+                tblHocSinh.Rows[i]["STT"] = i + 1;
+                dgvHocSinh.DataSource = tblHocSinh;
+                dgvHocSinh.Columns["STT"].DisplayIndex = 0;
+                dgvHocSinh.Columns[0].HeaderText = "Tên lớp";
+                dgvHocSinh.Columns[1].HeaderText = "Mã học sinh";
+                dgvHocSinh.Columns[2].HeaderText = "Họ tên";
+                dgvHocSinh.Columns[3].HeaderText = "Giới tính";
+                dgvHocSinh.Columns[4].HeaderText = "Ngày sinh";
+                dgvHocSinh.Columns[5].HeaderText = "Quê quán";
+                dgvHocSinh.Columns[0].Width = 100;
+                dgvHocSinh.Columns[1].Width = 100;
+                dgvHocSinh.Columns[2].Width = 100;
+                dgvHocSinh.Columns[3].Width = 80;
+                dgvHocSinh.Columns[4].Width = 100;
+                dgvHocSinh.Columns[5].Width = 200;
+                dgvHocSinh.AllowUserToAddRows = false;
+                dgvHocSinh.EditMode = DataGridViewEditMode.EditProgrammatically;
+            }
         }
     }
 }
